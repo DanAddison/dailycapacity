@@ -1,5 +1,5 @@
 .site-header {
-  background-color: $canvas-dark;
+  background-color: $white;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
@@ -7,14 +7,13 @@
 .header__inner {
   @include center-block;
   width: 95%;
+  max-width: $bp-3;
   display: flex;
   justify-content: space-between;
 }
 
 .site-branding {
   align-self: flex-end;
-  max-width: 300px;
-  margin-bottom: -1em;
   padding-right: $spacing;
 
   img {
@@ -24,11 +23,10 @@
   .site-title {
     // display: none;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2em;
     text-align: center;
 
     a {
-      color: $white;
       text-decoration: none;
     }
   }
@@ -46,6 +44,6 @@ button.menu-button {
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    background-color: $white;
+    background-color: $black;
   }
 }

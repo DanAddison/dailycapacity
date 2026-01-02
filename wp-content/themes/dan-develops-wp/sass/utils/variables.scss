@@ -19,8 +19,8 @@ $spacing: 2em;
 /*------------------------------------*\
     Font Variables
 \*------------------------------------*/
-$copy-face: "raleway", sans-serif;
-$headings-face: "Montserrat", "Lucida Grande", sans-serif;
+$copy-face: "Lexend Deca", sans-serif;
+$headings-face: $copy-face;
 $headings-weight: normal;
 
 /*------------------------------------*\
@@ -34,7 +34,7 @@ $grey-dark: #7b7b7b;
 $grey-darkest: #3f3f3f;
 $black: #000;
 
-$copy: #464646;
+$copy: $black;
 
 $primary: #53c9c8;
 $secondary: #7a53c9;

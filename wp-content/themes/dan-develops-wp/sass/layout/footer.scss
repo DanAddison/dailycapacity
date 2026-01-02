@@ -1,6 +1,7 @@
 .footer__inner {
   @include center-block;
   width: 95%;
+  max-width: $bp-3;
 }
 
 .footer-widgets {
@@ -32,6 +33,12 @@
       padding-right: 1em;
     }
   }
+}
+
+.sub-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__social {
