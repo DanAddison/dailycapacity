@@ -4,12 +4,12 @@
   </a>
 </p>
 <h1 align="center">
-  Dan Develops WP
+  Daily Capacity
 </h1>
 
 ## Description
 
-A really awesome starting point for creating bespoke WordPress websites.
+A WP fitness blog based upon my dan-develops-wp theme
 
 ## Build tooling
 
