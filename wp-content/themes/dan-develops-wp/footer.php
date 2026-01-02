@@ -4,6 +4,7 @@
  */
 ?>
 
+
 <?php do_action( 'da_before_site_footer' ); ?>
 
 <footer class="footer" id="site-footer">
