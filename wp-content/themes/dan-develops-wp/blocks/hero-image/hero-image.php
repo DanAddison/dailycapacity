@@ -3,6 +3,9 @@
  * Block Name: Hero Image - for adding fullscreen background image with responsive sizes
  */
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
+
+$image_id = get_field( 'hero_image' );
+var_dump($image_id);
 ?>
 
 <section class="block block-hero-image <?php echo $align_class; ?>">
