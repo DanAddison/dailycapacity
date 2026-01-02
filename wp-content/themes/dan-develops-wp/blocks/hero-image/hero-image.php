@@ -5,7 +5,6 @@
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 $image_id = get_field( 'hero_image' );
-var_dump($image_id);
 ?>
 
 <section class="block block-hero-image <?php echo $align_class; ?>">
@@ -17,24 +16,24 @@ var_dump($image_id);
 
 <style type="text/css">
 	.block-hero-image {
-		background-image: url('<?php echo wp_get_attachment_image_url( get_field( 'hero_image' ), 'hero_small' ); ?>');
+		background-image: url('<?php echo wp_get_attachment_image_url( $image_id, 'hero_small' ); ?>');
 	}
 	
 	@media screen and (min-width: 600px) {
 		.block-hero-image {
-			background-image: url('<?php echo wp_get_attachment_image_url( get_field( 'hero_image' ), 'hero_medium' ); ?>');
+			background-image: url('<?php echo wp_get_attachment_image_url( $image_id, 'hero_medium' ); ?>');
 		}				
 	}
 	
 	@media screen and (min-width: 900px) {
 		.block-hero-image {
-			background-image: url('<?php echo wp_get_attachment_image_url( get_field( 'hero_image' ), 'hero_large' ); ?>');
+			background-image: url('<?php echo wp_get_attachment_image_url( $image_id, 'hero_large' ); ?>');
 		}				
 	}	
 	
 	@media screen and (min-width: 1500px) {
 		.block-hero-image {
-			background-image: url('<?php echo wp_get_attachment_image_url( get_field( 'hero_image' ), 'hero_xlarge' ); ?>');
+			background-image: url('<?php echo wp_get_attachment_image_url( $image_id, 'hero_xlarge' ); ?>');
 		}				
 	}
 
