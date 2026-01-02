@@ -80,7 +80,7 @@ function compileFrontendSass() {
 }
 
 function compileEditorSass() {
-	return compileSass(editorStyles.src, 'editor.build.css');
+	return compileSass(paths.editorStyles.src, 'editor.build.css');
 }
 
 // declare gulp tasks
