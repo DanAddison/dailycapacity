@@ -1,0 +1,21 @@
+{
+  "name": "dan-develops-gulp-setup",
+  "version": "1.0.0",
+  "description": "The gulp process for the dan-develops-wp WordPress theme",
+  "main": "gulpfile.js",
+  "author": "Dan Addison",
+  "repository": "null",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.10",
+    "cssnano": "^5.1.14",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.4.18",
+    "sass": "^1.55.0"
+  }
+}
