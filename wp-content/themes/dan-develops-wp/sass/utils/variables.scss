@@ -21,28 +21,27 @@ $spacing: 2em;
 \*------------------------------------*/
 $copy-face: "Lexend Deca", sans-serif;
 $headings-face: $copy-face;
-$headings-weight: normal;
+$headings-weight: 400;
 
 /*------------------------------------*\
-    Colours - some dan-develops-wp defaults
+    Colours
 \*------------------------------------*/
 $white: #fff;
-$grey-lightest: #dfdfdf;
+$offwhite: #f2f2f2;
 $grey-light: #cbcbcb;
 $grey: #aeaeae;
-$grey-dark: #7b7b7b;
-$grey-darkest: #3f3f3f;
+$grey-dark: #444;
 $black: #000;
 
 $copy: $black;
 
-$primary: #53c9c8;
-$secondary: #7a53c9;
+$primary: #a4d2e6;
+$secondary: #bdba68;
 
 // Backgrounds
-$canvas-light: #f2f2f2;
-$canvas-medium: $grey-light;
-$canvas-dark: $grey-darkest;
+$canvas-light: #e6e3d8;
+$canvas-medium: #d3c9b9;
+$canvas-dark: $grey-dark;
 
 /*------------------------------------*\
     Gutenberg color options

@@ -28,7 +28,9 @@
 
 		<div class="site-branding">
 								
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-logo">
+				<img src="<?= get_template_directory_uri() ?>/assets/images/DailyCapacityLogo-unfinished.png" alt="Daily Capacity brand logo" width="200" height="200"/>
+			</a>
 
 		</div><!-- .site-branding -->
 
