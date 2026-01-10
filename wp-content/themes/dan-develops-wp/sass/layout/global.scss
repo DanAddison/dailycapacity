@@ -8,16 +8,16 @@ main.main-content {
   min-height: calc(100vh - 200px);
 }
 
-main.main-content > * {
-  &:first-child:not(.alignfull):not(.block-hero-image) {
-    margin-top: 4rem;
-  }
-}
+// main.main-content > * {
+//   &:first-child:not(.alignfull):not(.block-hero-image) {
+//     margin-top: 4rem;
+//   }
+// }
 
 main.main-content > *:not(.alignwide):not(.alignfull) {
   @include center-block;
-  width: 95%;
-  max-width: $bp-3;
+  width: 90%;
+  max-width: $container;
 }
 
 .hidden {

@@ -16,15 +16,14 @@
     // The Loop
     while ( $post_archive_query->have_posts() ) {
         $post_archive_query->the_post();
+            $post_id = get_the_ID();
         ?>
 
         <div class="post-preview post-preview--<?php echo $post_type; ?>">
-            <div class="post-preview__thumbnail"><?php the_post_thumbnail( 'thumbnail' ); ?>
-            </div>
-            <div class="post-preview__content">
-                <h4><?php the_title(); ?></h4>
-                <p><?php the_excerpt(); ?></p>
-            </div>
+            <a href="<?php the_permalink(); ?>" class="post-preview__link">
+                <h3><?php the_title(); ?></h3>
+                <p><?php echo da_get_excerpt($post_id, 20); ?></p>
+            </a>
         </div>
 
         <?php

@@ -2,7 +2,7 @@
 First, sidebar widget stylings 
 ***************************/
 .widget {
-  padding: $spacing;
+  padding: $spacing-1;
   width: 100%;
   font-family: $headings-face;
 
@@ -53,7 +53,7 @@ First, sidebar widget stylings
 *********************************************************/
 .widget_cta {
   @include mq($bp-xl) {
-    margin-top: $spacing * 3;
+    margin-top: $spacing-1 * 3;
   }
 }
 

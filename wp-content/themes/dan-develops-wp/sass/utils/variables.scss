@@ -11,17 +11,18 @@ $bp-7: 1700px;
 
 $bp-menu: $bp-3;
 
-$container: $bp-4;
+$container: 800px;
 
 // spacing
-$spacing: 2em;
+$spacing-1: 1.5rem;
+$spacing-2: 3rem;
 
 /*------------------------------------*\
     Font Variables
 \*------------------------------------*/
 $copy-face: "Lexend Deca", sans-serif;
 $headings-face: $copy-face;
-$headings-weight: 400;
+$headings-weight: 800;
 
 /*------------------------------------*\
     Colours

@@ -7,14 +7,14 @@
 .header__inner {
   @include center-block;
   width: 95%;
-  max-width: $bp-3;
+  max-width: $container;
   display: flex;
   justify-content: space-between;
 }
 
 .site-branding {
   align-self: flex-end;
-  padding-right: $spacing;
+  padding-right: $spacing-1;
 
   .site-logo {
 

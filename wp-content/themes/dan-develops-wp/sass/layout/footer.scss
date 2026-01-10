@@ -7,12 +7,12 @@
 .footer__inner {
   @include center-block;
   width: 95%;
-  max-width: $bp-3;
+  max-width: $container;
 }
 
 .footer-widgets {
   .widget {
-    margin-bottom: $spacing;
+    margin-bottom: $spacing-1;
   }
   .widget-title {
     margin-bottom: 0;
