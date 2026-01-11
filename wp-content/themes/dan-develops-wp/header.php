@@ -28,17 +28,17 @@
 
 		<div class="site-branding">
 								
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<img src="<?= get_template_directory_uri() ?>/assets/images/DailyCapacityLogo-unfinished.png" alt="Daily Capacity brand logo" width="200" height="200"/>
 			</a>
 
 		</div><!-- .site-branding -->
 
-		<button id="js-menu-button" class="menu-button hamburger hamburger--squeeze" type="button" aria-label="Menu" aria-controls="navigation">
+		<!-- <button id="js-menu-button" class="menu-button hamburger hamburger--squeeze" type="button" aria-label="Menu" aria-controls="navigation">
 			<span class="hamburger-box">
 				<span class="hamburger-inner"></span>
 			</span>
-		</button><!-- .hamburger -->
+		</button> -->
 
 		<?php if( has_nav_menu( 'main' ) ) : ?>	
 		<?php get_template_part( 'template-parts/primary-navigation' ); ?>

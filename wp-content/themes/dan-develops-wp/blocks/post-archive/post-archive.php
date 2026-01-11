@@ -20,7 +20,7 @@
         ?>
 
         <div class="post-preview post-preview--<?php echo $post_type; ?>">
-            <a href="<?php the_permalink(); ?>" class="post-preview__link">
+            <a href="<?php the_permalink(); ?>" class="post-preview__link no-underline">
                 <h3><?php the_title(); ?></h3>
                 <p><?php echo da_get_excerpt($post_id, 20); ?></p>
             </a>

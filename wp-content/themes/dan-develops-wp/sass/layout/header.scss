@@ -15,20 +15,9 @@
 .site-branding {
   align-self: flex-end;
   padding-right: $spacing-1;
-
-  .site-logo {
-
-  }
-
-  .site-title {
-    // display: none;
-    margin: 0;
-    font-size: 2em;
-    text-align: center;
-
-    a {
-      text-decoration: none;
-    }
+  width: 120px;
+  @include mq($bp-2) {
+    width: 200px;
   }
 }
 

@@ -50,7 +50,7 @@ h4 {
 }
 
 h1 {
-  margin-top: 1rem;
+  margin-top: 1em;
   font-size: 3rem;
   @include mq($bp-3) {
     font-size: 4rem;
@@ -87,16 +87,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: $black;
-  text-decoration: none;
-
-  .main-content p & {
-    text-decoration: underline;
-  }
-
-  // &:visited {
-  //   color: $color__link-visited;
-  // }
+  color: currentColor;
 }
 
 /* Buttons

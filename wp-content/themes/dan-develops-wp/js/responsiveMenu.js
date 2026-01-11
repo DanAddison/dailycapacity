@@ -6,39 +6,39 @@
 * (Revealing Module Pattern - https://toddmotto.com/mastering-the-module-pattern/)
 */
 
-var ResponsiveMenu = (function($) {
+// var ResponsiveMenu = (function($) {
 	
-	var _toggleMenu = function(elm) {
-		elm.toggleClass('is-active');
-		$('body').toggleClass('is-visible-menu');
-	};
+// 	var _toggleMenu = function(elm) {
+// 		elm.toggleClass('is-active');
+// 		$('body').toggleClass('is-visible-menu');
+// 	};
 	
-	var closeMenu = function() {
-		$('body').removeClass('is-visible-menu');
-		$('#js-menu-button').removeClass('is-active');
-	};	
+// 	var closeMenu = function() {
+// 		$('body').removeClass('is-visible-menu');
+// 		$('#js-menu-button').removeClass('is-active');
+// 	};	
 	
-  var _bindEvents = function() {
+//   var _bindEvents = function() {
 	  
-	  $('#js-menu-button').on('click', function() {
-	  	_toggleMenu( $(this) );
-		});
+// 	  $('#js-menu-button').on('click', function() {
+// 	  	_toggleMenu( $(this) );
+// 		});
 		
-		$(document).on('keyup', function(e) {
-		  if (e.keyCode == 27) {
-			  closeMenu();
-		  }
-	  });		
+// 		$(document).on('keyup', function(e) {
+// 		  if (e.keyCode == 27) {
+// 			  closeMenu();
+// 		  }
+// 	  });		
 		
-  };  
+//   };  
   
-  var init = function() {
-	 	_bindEvents();
-  };
+//   var init = function() {
+// 	 	_bindEvents();
+//   };
   
-  return {
-    init: init,
-    closeMenu: closeMenu
-  };
+//   return {
+//     init: init,
+//     closeMenu: closeMenu
+//   };
 
-})(jQuery);
+// })(jQuery);
