@@ -62,25 +62,34 @@ function compileScripts() {
 }
 
 // SASS compilation process
-function compileSass(srcFile, outputFilename) {
+function compileSass(srcFile, outputFilename, dest) {
 	return gulp
-		.src(srcFile)
-		.pipe(concat(outputFilename))
+		.src(srcFile, { allowEmpty: true })
 		.pipe(sassGlob())
-		.on("error", handleError)
-		.pipe(sass(sassOpts))
-		.on("error", handleError)
-		.pipe(postcss([autoprefixer("last 2 versions", "ie >= 9"), cssnano()]))
-		.pipe(gulp.dest(paths.frontendStyles.dest))
+		.pipe(sass(sassOpts).on("error", handleError))
+		.pipe(postcss([
+			autoprefixer({ overrideBrowserslist: ["last 2 versions", "ie >= 9"] }),
+			cssnano()
+		]))
+		.pipe(concat(outputFilename))
+		.pipe(gulp.dest(dest))
 		.pipe(browserSync.stream());
 }
 
 function compileFrontendSass() {
-	return compileSass(paths.frontendStyles.src, 'frontend.build.css');
+	return compileSass(
+		paths.frontendStyles.src,
+		'frontend.build.css',
+		paths.frontendStyles.dest
+	);
 }
 
 function compileEditorSass() {
-	return compileSass(paths.editorStyles.src, 'editor.build.css');
+	return compileSass(
+		paths.editorStyles.src,
+		'editor.build.css',
+		paths.editorStyles.dest
+	);
 }
 
 // declare gulp tasks
