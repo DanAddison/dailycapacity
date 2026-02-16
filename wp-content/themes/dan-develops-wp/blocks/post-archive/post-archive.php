@@ -23,6 +23,7 @@
             <a href="<?php the_permalink(); ?>" class="post-preview__link no-underline">
                 <h3><?php the_title(); ?></h3>
                 <p><?php echo da_get_excerpt($post_id, 20); ?></p>
+                <div class="icon-arrow"></div>
             </a>
         </div>
 

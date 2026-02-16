@@ -1,12 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const header = document.getElementById('masthead');
-	const shrinkPoint = 20; // px before shrinking
+  const header = document.getElementById('masthead');
+  const sentinel = document.getElementById('header-sentinel');
 
-	window.addEventListener('scroll', () => {
-		if (window.scrollY > shrinkPoint) {
-			header.classList.add('is-scrolled');
-		} else {
-			header.classList.remove('is-scrolled');
-		}
-	});
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      header.classList.toggle('is-scrolled', !entry.isIntersecting);
+    },
+    {
+      root: null,
+      threshold: 0,
+    }
+  );
+
+  observer.observe(sentinel);
 });
+

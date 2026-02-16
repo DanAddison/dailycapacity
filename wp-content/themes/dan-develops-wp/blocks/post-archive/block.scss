@@ -16,26 +16,11 @@
   text-decoration: none;
 
   &:hover {
-    &::after {
-      box-shadow: inset 0 0 0 12px $primary;
+    .icon-arrow {
+      transform: translateX(10px);
     }
   }
 
-  &:after {
-    position: absolute;
-    top: 26px;
-    right: 6px;
-
-    content: '';
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    box-sizing: border-box;
-
-    /* ring */
-    box-shadow: inset 0 0 0 3px $primary;
-    transition: box-shadow 0.2s ease-in-out;
-  }
 
   h3 {
     margin-top: 0;
@@ -46,5 +31,17 @@
   p {
     margin-bottom: 0;
     color: $grey-dark;
+  }
+
+  .icon-arrow {
+    position: absolute;
+    right: 0;
+    top: 26px;
+    background-image: url('../../assets/images/icon-arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 40px;
+    transition: transform 0.2s ease;
   }
 }

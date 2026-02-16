@@ -48,4 +48,6 @@
 
 </header><!-- #site-header -->
 
+<div id="header-sentinel"></div>
+
 <?php do_action( 'da_after_site_header' ); ?>
