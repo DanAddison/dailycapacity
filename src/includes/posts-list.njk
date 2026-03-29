@@ -1,0 +1,15 @@
+<ul class="posts-list">
+{# posts with favourite:true in front matter #}
+{%- for post in collections.posts | favorites -%}
+    <li class="posts-list__item">
+            <time datetime="{{ post.date | dateToISO }}">Posted: {{ post.date | dateToFormat('DD') }}</time>
+        <h2 class="posts-list__title">
+            <a href="{{ post.url }}">
+            {{ post.data.title }}
+            </a>
+        </h2>
+        <p class="posts-list__excerpt">{{ post.data.excerpt }}</p>
+        <a class="posts-list__readmore" href="{{ post.url }}">Read more...</a>
+    </li>
+{%- endfor -%}
+</ul>

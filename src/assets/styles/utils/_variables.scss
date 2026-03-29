@@ -1,0 +1,63 @@
+//--------------------
+// SCSS VARIABLES
+//--------------------
+
+$breakpoints: (
+    md: 670px,
+    lg: 940px,
+    xl: 1260px
+);
+
+$container-max-width: 1200px;
+
+// Colors
+//
+// Brand Colors
+$color-white: #EDEBEC;
+$color-green: #9bbfa7;
+$color-yellow: #E8B627;
+$color-brown: #875936;
+$color-black: #323339;
+
+// Color Mappings
+$bg-color: $color-black;
+$text-color: $color-white;
+
+
+// Typography
+//
+// Font families
+
+// @font-face {
+//     font-family: 'Noe Display';
+//     font-style: normal;
+//     font-display: swap;
+//     font-weight: 400;
+//     src: local('Noe Display'), local('NoeDisplay-Regular'),
+//         url('/assets/fonts/noe-display-regular.woff2') format('woff2'),
+//         url('/assets/fonts/noe-display-regular.woff') format('woff');
+// }
+
+$font-family-sans-serif: 'Poppins', 'Roboto', 'Helvetica Neue', sans-serif;
+$font-family-serif: Georgia, Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, monospace;
+
+
+
+// Animation
+//
+// Default easing curves, Transitions, etc
+$animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
+$animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
+$animation-curve-default: $animation-curve-fast-out-slow-in;
+
+// Misc Shared
+//
+// common shared styles
+$spacing: 2rem;
+
+$box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+$box-shadow-elevated: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+
+$border-radius: 0.25rem;

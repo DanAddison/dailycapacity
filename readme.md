@@ -1,34 +1,63 @@
-<p align="center">
+<div align="center">
   <a href="">
-    <img alt="" src="wp-content/themes/dan-develops-wp/screenshot.png" width="900" />
+    <img alt="" src="src/assets/images/Eleventous-screenshot.jpg" width="800" />
   </a>
-</p>
-<h1 align="center">
-  Daily Capacity
-</h1>
+</div>
 
-## Description
+# Eleventous
 
-A WP fitness blog based upon my dan-develops-wp theme
+A simple Eleventy Starter Kit, my base for all new 11ty projects.
 
-## Build tooling
+I've added a little more flesh on the bones of [Eleventastic](https://github.com/maxboeck/eleventastic) by Max Boeck.
 
-Uses Gulp for Sass + JS compilation and browsersync, but is otherwise a simple 'traditional' WP boilerplate ie. no build processes for working with React-based Gutenberg blocks (this theme uses ACF for custom block creation), and no Bedrock or other Composer-based PHP dependency management. 
+## Features
+
+-   CSS Pipeline (Sass, CleanCSS)
+-   JS Bundling (Webpack)
+-   SVG Icon Sprite Generation
+-   Critical CSS
+-   HTML Minification
+-   No external builds, everything runs through 11ty
+
+## Getting Started
+
+To install the necessary packages, run this command in the root folder of the site:
+
 ```sh
-cd app/public/wp-content/themes/dan-develops-wp/build
 npm install
-gulp
 ```
 
-## Docs
+### Commands
 
-Coming soon
+-   Run `npm start` for a development server and live reloading
+-   Run `npm run build` to generate a production build
 
-## Requirements
+## CSS
 
-Gulp process is currently using node v11.6.0 (npm v6.9.0)
+Styling works with Sass. The main index file is in `src/assets/styles/main.scss`. Import any SCSS code you want in there; it will be processed and optimized. The output is in `dist/assets/styles/main.css`
 
+## JS
+
+Javascript can be written in ES6 syntax. The main index file is in `src/assets/scripts/main.js`. It will be transpiled to ES5 with babel, bundled together with webpack, and minified in production. The output is in `dist/assets/scripts/main.js`
+
+## SVG Icons
+
+All SVG files added to `src/assets/icons` will be bundled into a `symbol` sprite file. The SVG filename will then be used as the symbol identifier and the icon can be used as a shortcode.
+
+For example, if you have a `github.svg` file in that folder, you can display it anywhere by using `{% icon "github" %}` in your templates.
+
+## Critical CSS
+
+Currently, critical CSS will only be inlined in the head of the homepage. This is done by using the [critical](https://github.com/addyosmani/critical) package in an automatic transform.
 
 ## Credits
 
-- Initially based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+This is basically just [Eleventastic](https://github.com/maxboeck/eleventastic) by Max Boeck.
+
+I've just added a little more flesh on its bones (mostly just content) to make things even quicker to get up and running.
+
+Max in turn credits the following for influencing Eleventastic:
+
+-   Phil Hawksworth: [EleventyOne](https://github.com/philhawksworth/eleventyone)
+-   Mike Riethmuller: [Supermaya](https://github.com/MadeByMike/supermaya)
+-   Zach Leatherman: [zachleat.com](https://github.com/zachleat/zachleat.com)

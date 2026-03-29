@@ -1,0 +1,24 @@
+.icon {
+  display: inline-block;
+  font-size: 1.5em;
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  fill: $color-white;
+
+  &:hover,
+  &:focus {
+    fill: $color-yellow;
+  }
+}
+
+/*********************************************************
+## Footer icons
+*********************************************************/
+.footer-icons {
+  display: flex;
+  
+  li {
+    padding: 0.5em;
+  }
+}
